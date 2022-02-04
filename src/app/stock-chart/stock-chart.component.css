@@ -1,6 +1,6 @@
 .chart-control {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -14,4 +14,8 @@
 .stock-chart {
     margin-top: 10vh;
     margin-bottom: 10vh;
+}
+
+#message {
+    color: red;
 }

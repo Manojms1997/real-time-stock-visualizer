@@ -2,6 +2,7 @@
    <div class="chart-control">
       <h2>{{stockName}} Stock:</h2>
       <!-- <button mat-stroked-button color="warn" (click) = "stopData()" class="button">stop data</button> -->
+      <div *ngIf="showMessage" id="message">(Stock market timing is over. Showing old data)</div>
    </div>
    <google-chart #chart
       [title]="stockName"

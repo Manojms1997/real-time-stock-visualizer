@@ -11,6 +11,7 @@ export class StockChartComponent implements OnInit {
   data;
   setIntervalId: any;
   type = 'CandlestickChart';
+  showMessage = false;
   options = {
     legend: 'none',
     candlestick: {
@@ -110,11 +111,13 @@ export class StockChartComponent implements OnInit {
       }
       else {
         console.log("weekday but non stock time");
+        this.showMessage = true;
         this.updateDayData();
       }
     }
     else {
       console.log("weekend, so no stock market");
+      this.showMessage = true;
       this.updateDayData();
     }
   }
