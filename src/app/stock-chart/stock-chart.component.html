@@ -1,0 +1,15 @@
+<div class="stock-chart">
+   <div class="chart-control">
+      <h2>{{stockName}} Stock:</h2>
+      <!-- <button mat-stroked-button color="warn" (click) = "stopData()" class="button">stop data</button> -->
+   </div>
+   <google-chart #chart
+      [title]="stockName"
+      [type]="type"
+      [data]="data"
+      [options]="options"
+      [columns]="columnNames"
+      class="chart">
+   </google-chart>
+</div>
+
